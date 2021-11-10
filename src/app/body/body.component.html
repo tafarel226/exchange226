@@ -1,0 +1,31 @@
+
+<div class="card text-center bg-light">
+    <div class="card-header">
+        Traitement......
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Echange de monnaie</h5>
+     
+    <label for="choix">je donne : &NonBreakingSpace; </label>
+    <select name="choix" id="choix" style="color: red;">
+        <option>Perfect Money</option>
+        <option>Moov Money</option>
+        <option>Orange Money </option>
+    </select>
+    <input type="number" [(ngModel)]="recevoir" placeholder="00" value="{{vendre/530}}">
+    <p>La valeur donnnee est : {{vendre}}</p>
+
+
+<label for="choix">je recois : &NonBreakingSpace; </label>
+    <select name="choix" id="choix" style="color: green;">
+        <option> Orange Money</option>
+        <option>Moov Money</option>
+        <option>Perfect Money</option>
+    </select>
+    <input type="number" [(ngModel)]="vendre" placeholder="00" value="{{recevoir*530}}">
+    <p>Vous recevrez : {{recevoir*530}}</p>
+    </div>
+    <div class="card-footer text-muted">
+        <a href="#" class="btn btn-primary">Continuer</a>
+    </div>
+  </div>
